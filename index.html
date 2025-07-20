@@ -1,82 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.R.T.-Inspired Furniture</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header with Sticky Navigation -->
-    <header>
-        <nav class="sticky">
-            <h1 class="logo">Elegant Home</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#collections">Collections</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Living Designs - Under Construction</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Timeless Elegance for Your Home</h2>
-            <p>Discover our curated collections of sophisticated furniture.</p>
-            <a href="#collections" class="cta-button">Explore Collections</a>
-        </div>
-    </section>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #f5f1ea;
+    background: 
+      linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+      url('https://images.unsplash.com/photo-1509228627152-cb9d9ec1bb36?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-    <!-- Collections Section -->
-    <section id="collections">
-        <h2>Our Collections</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <img src="assets/images/furniture1.jpg" alt="Dining Table">
-                <h3>Dining Collection</h3>
-                <p>Classic designs for elegant dining experiences.</p>
-            </div>
-            <div class="product-item">
-                <img src="assets/images/furniture2.jpg" alt="Bedroom Set">
-                <h3>Bedroom Collection</h3>
-                <p>Luxurious comfort for restful nights.</p>
-            </div>
-            <div class="product-item">
-                <img src="assets/images/furniture3.jpg" alt="Living Room">
-                <h3>Living Room Collection</h3>
-                <p>Timeless pieces for your living space.</p>
-            </div>
-        </div>
-    </section>
+  .logo {
+    max-width: 220px;
+    margin-bottom: 40px;
+    animation: pulse 2.5s infinite;
+  }
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At Elegant Home, we craft furniture that blends classic sophistication with modern functionality. Inspired by timeless designs, our collections elevate every room with elegance and comfort.</p>
-    </section>
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      filter: drop-shadow(0 0 0 rgba(245, 241, 234, 0));
+    }
+    50% {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 10px rgba(245, 241, 234, 0.6));
+    }
+  }
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+  h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 0.12em;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #d4af37;
+    animation: glow 3s ease-in-out infinite alternate;
+  }
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Elegant Home. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 8px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37;
+    }
+    to {
+      text-shadow: 0 0 20px #fff8dc,
