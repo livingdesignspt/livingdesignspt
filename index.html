@@ -5,39 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Living Designs – Under Construction</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
   html, body {
     margin: 0; padding: 0; height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background:
-      linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
-      url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1920&q=90') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f5f1e9;
+    color: #fff9e6;
     text-align: center;
     overflow: hidden;
   }
 
   .container {
-    background: rgba(10, 10, 10, 0.8);
-    border-radius: 25px;
-    padding: 40px 30px;
-    max-width: 420px;
+    max-width: 480px;
     width: 90%;
+    padding: 50px 40px;
+    background: rgba(10, 6, 2, 0.85);
+    border-radius: 24px;
     box-shadow:
-      0 0 30px 6px #ffca28,
-      0 0 50px 15px #ffca28 inset;
-    animation: fadeScaleIn 1.5s ease forwards;
+      0 8px 40px rgba(0,0,0,0.7),
+      inset 0 0 40px rgba(255, 214, 76, 0.3);
+    user-select: none;
+    animation: fadeInScale 1.6s ease forwards;
   }
 
-  @keyframes fadeScaleIn {
+  @keyframes fadeInScale {
     0% {
       opacity: 0;
-      transform: scale(0.85);
+      transform: scale(0.9);
     }
     100% {
       opacity: 1;
@@ -46,78 +46,100 @@
   }
 
   img.logo {
-    max-width: 180px;
-    margin-bottom: 30px;
-    border-radius: 12px;
+    max-width: 220px;
+    margin-bottom: 38px;
+    border-radius: 16px;
     box-shadow:
-      0 0 15px 3px #ffca28,
-      0 0 30px 6px #ffca28 inset;
-    animation: pulseGlow 3s ease-in-out infinite;
+      0 12px 28px rgba(0,0,0,0.8),
+      0 0 22px 2px #ffd54f,
+      inset 0 0 15px 2px #ffeb99;
+    transition: box-shadow 0.4s ease;
+    animation: pulseGlow 5s ease-in-out infinite;
+  }
+  img.logo:hover {
+    box-shadow:
+      0 14px 35px rgba(0,0,0,0.95),
+      0 0 30px 4px #fff59d,
+      inset 0 0 20px 4px #fffde7;
   }
 
   @keyframes pulseGlow {
     0%, 100% {
       box-shadow:
-        0 0 15px 3px #ffca28,
-        0 0 30px 6px #ffca28 inset;
+        0 12px 28px rgba(0,0,0,0.8),
+        0 0 22px 2px #ffd54f,
+        inset 0 0 15px 2px #ffeb99;
     }
     50% {
       box-shadow:
-        0 0 25px 7px #fff176,
-        0 0 40px 10px #fff176 inset;
+        0 18px 42px rgba(0,0,0,0.9),
+        0 0 36px 5px #fff176,
+        inset 0 0 25px 4px #fffde7;
     }
   }
 
   h1 {
-    font-weight: 700;
-    font-size: 2.8rem;
-    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 24px;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: #ffca28;
+    color: #ffd54f;
     text-shadow:
-      0 0 8px #ffca28,
-      0 0 20px #ffca28;
-    animation: glowText 3s ease-in-out infinite;
+      0 0 10px #ffd54f,
+      0 0 30px #ffecb3;
+    animation: textGlow 4.5s ease-in-out infinite;
+  }
+
+  @keyframes textGlow {
+    0%, 100% {
+      text-shadow:
+        0 0 10px #ffd54f,
+        0 0 30px #ffecb3;
+    }
+    50% {
+      text-shadow:
+        0 0 18px #fff59d,
+        0 0 45px #fffde7;
+    }
   }
 
   p {
     font-weight: 300;
     font-size: 1.3rem;
-    color: #f5f1e9;
-    margin: 0;
-  }
-
-  @keyframes glowText {
-    0%, 100% {
-      text-shadow:
-        0 0 8px #ffca28,
-        0 0 20px #ffca28;
-    }
-    50% {
-      text-shadow:
-        0 0 15px #fff176,
-        0 0 40px #fff176;
-    }
+    color: #fffde7cc;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 400px;
+    user-select: text;
   }
 
   @media (max-width: 600px) {
+    .container {
+      padding: 40px 25px;
+    }
+    img.logo {
+      max-width: 160px;
+      margin-bottom: 30px;
+    }
     h1 {
       font-size: 2.2rem;
       letter-spacing: 0.1em;
+      margin-bottom: 18px;
     }
     p {
       font-size: 1.1rem;
+      max-width: 90%;
     }
   }
 </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.jpg" alt="Living Designs Logo" class="logo" 
+  <div class="container" role="main">
+    <img src="logo.jpg" alt="Living Designs Logo" class="logo"
          onerror="this.src='https://dummyimage.com/300x100/222/fff&text=Living+Designs';" />
     <h1>Under Construction</h1>
-    <p>Crafting something timeless for you. Check back soon!</p>
+    <p>We’re carefully crafting timeless pieces just for you. Please check back soon.</p>
   </div>
 </body>
 </html>
