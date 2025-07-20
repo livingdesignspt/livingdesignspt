@@ -1,1 +1,82 @@
-<!DOCTYPE html><html><head><title>Living Designs</title></head><body><h1>Home</h1><a href='portfolio.html'>Portfolio</a><a href='kitchens.html'>Kitchens</a><a href='bedrooms.html'>Bedrooms</a><a href='livingrooms.html'>Living Rooms</a><a href='doors.html'>Doors & Gates</a></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.R.T.-Inspired Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Sticky Navigation -->
+    <header>
+        <nav class="sticky">
+            <h1 class="logo">Elegant Home</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Timeless Elegance for Your Home</h2>
+            <p>Discover our curated collections of sophisticated furniture.</p>
+            <a href="#collections" class="cta-button">Explore Collections</a>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections">
+        <h2>Our Collections</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="assets/images/furniture1.jpg" alt="Dining Table">
+                <h3>Dining Collection</h3>
+                <p>Classic designs for elegant dining experiences.</p>
+            </div>
+            <div class="product-item">
+                <img src="assets/images/furniture2.jpg" alt="Bedroom Set">
+                <h3>Bedroom Collection</h3>
+                <p>Luxurious comfort for restful nights.</p>
+            </div>
+            <div class="product-item">
+                <img src="assets/images/furniture3.jpg" alt="Living Room">
+                <h3>Living Room Collection</h3>
+                <p>Timeless pieces for your living space.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Elegant Home, we craft furniture that blends classic sophistication with modern functionality. Inspired by timeless designs, our collections elevate every room with elegance and comfort.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Elegant Home. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
